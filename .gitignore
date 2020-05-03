@@ -1,1 +1,13 @@
-/Data/*
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# iPython Notebook checkpoints
+.ipynb_checkpoints
+
+# IDE configuration
+.idea
+
+# Data is too large for GitHub
+Data/
