@@ -9,5 +9,6 @@ __pycache__/
 # IDE configuration
 .idea
 
-# Data is too large for GitHub
-Data/
+# Files too large for GitHub
+*.hdf
+*.csv
