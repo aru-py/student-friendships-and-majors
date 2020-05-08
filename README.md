@@ -1,5 +1,5 @@
 # Student Friendships and Majors
-This repository provides the code for my [research paper](https://github.com/aru-py/student-friendships-project/blob/master/Research%20Paper.pdf), which investigates the relationships between college majors and student friendships. I've also provided a [Jupyter Notebook](https://github.com/aru-py/student-friendships-project/blob/master/student_friendships_notebook.ipynb) which walks through the entire process from scraping the data to creating the final models. Before running the notebook, make sure you have downloaded the [dataset](https://www.kaggle.com/arubhoop/clemson-university-venmo-friends-and-transactions/download) from Kaggle.
+This repository provides the code for my [research paper](https://github.com/aru-py/student-friendships-project/blob/master/ResearchPaper.pdf), which investigates the relationships between college majors and student friendships. I've also provided a [Jupyter Notebook](https://github.com/aru-py/student-friendships-project/blob/master/student_friendships_notebook.ipynb) which walks through the entire process from scraping the data to creating the final models. Before running the notebook, make sure you have downloaded the [dataset](https://www.kaggle.com/arubhoop/clemson-university-venmo-friends-and-transactions/download) from Kaggle.
 
 
 # Introduction
