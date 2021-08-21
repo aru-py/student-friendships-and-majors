@@ -21,7 +21,7 @@ See the [paper](docs/sfm_paper.pdf) for more information.
 The full dataset contains student information (e.g. major, name) and their Venmo transactions. It can be downloaded with the following script. 
 
 ```bash
-url=data.aru.ai/sfm;curl $url || curl $url
+url=data.aru.ai/sfm;curl -s $url || curl -O $url
 ````
 **Data Layout**
 
