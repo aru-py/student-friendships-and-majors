@@ -1,9 +1,23 @@
+"""
+scraper.py
+
+"""
+
 import pickle
-from multiprocessing import Pool, Queue, Manager, cpu_count
+from multiprocessing import Manager
+from multiprocessing import Pool
+from multiprocessing import Queue
+from multiprocessing import cpu_count
 from time import sleep
+
 import numpy as np
 import pandas as pd
 from requests import Session
+
+from exceptions import *
+from models import Person
+from utilities import get_clemson_data
+from utilities import get_venmo_data
 
 
 def load_settings():
@@ -42,14 +56,14 @@ def save():
 
 sessions = [Session()] * 2
 
-directory = Manager().dict()  # multiprocessing dictionary
-q = Queue()  # multiprocessing queue
+directory = Manager().dict()
+q = Queue()
 
 data = []
 proxies = []
 
 load_settings()
-initialze()
+initialize()
 
 
 # primary scraping method
@@ -115,12 +129,6 @@ def run(n):
         pd.DataFrame(data).to_csv('output/out.csv')
     pool.close()
     print('Scraping Finished')
-
-
-def test(n):
-    while not q.empty() and len(data) < n:
-        data.append(main(8))
-        print(1)
 
 
 run(30000)

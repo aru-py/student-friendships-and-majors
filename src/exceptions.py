@@ -1,3 +1,10 @@
+"""
+exceptions.py
+"""
+
+from models import Person
+
+
 class NonFatalException(Exception):
     """Harmless exceptions."""
     def __init__(self, person):
@@ -36,17 +43,3 @@ class SessionTimeOut(FatalException):
     def __str__(self):
         return "Venmo session timed out!"
 
-
-class Person:
-    def __init__(self, args):
-        self.name = args[0]
-        self.username = args[1]
-        self.id = None
-        self.cuid = None
-        self.major = None
-        self.class_standing = None
-        self.friends = []
-        self.transactions = []
-
-    def dump(self):
-        return self.name, self.username, self.id, self.cuid, self.major, self.class_standing, self.friends, self.transactions

@@ -1,11 +1,15 @@
+"""
+utils.py
+"""
+
+
 from contextlib import suppress
 from urllib.error import URLError
 from urllib.request import urlretrieve
 from bs4 import BeautifulSoup
 from requests import RequestException
 import regex as re
-from data_collection.exceptions import *
-# from exceptions import *
+from exceptions import *
 
 
 def get_clemson_data(session, person):
